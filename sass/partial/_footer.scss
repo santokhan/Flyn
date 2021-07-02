@@ -1,0 +1,148 @@
+footer {
+    position: relative;
+    overflow: hidden;
+    background: #121A1D;
+
+    .footer-bottom {
+        position: relative;
+        overflow-x: hidden;
+        background: url("/image/footer.png");
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+    }
+
+    h1 {
+        font-size: 1.5rem;
+        font-weight: 600;
+    }
+
+    h6 {
+        font-size: 0.85rem;
+        line-height: 1.4;
+        font-weight: 400;
+    }
+
+    .absolute-footer {
+        position: absolute;
+        left: 0;
+        top: 0;
+    }
+
+    .circle-1 {
+        position: absolute;
+        left: 30vw;
+        top: -30px;
+    }
+
+    .circle-2 {
+        position: absolute;
+        left: 24vw;
+        top: -200px;
+    }
+
+    .button-purchase-now-1 {
+        height: 50px;
+        color: #ffffff;
+        font-size: 13px;
+        font-weight: 500;
+        padding: 0px 30px;
+        line-height: 50px;
+        border-radius: 0px;
+        text-align: center;
+        letter-spacing: 1.6px;
+        text-transform: uppercase;
+        margin: -7px 0px;
+        border: 1px solid #ffffff;
+        z-index: 20;
+        background: transparent;
+
+        &:hover {
+            background: #ffffff;
+            color: #000000;
+            margin: -7px 0px;
+            border: 1px solid #ffffff;
+            transition: all 0.4s ease-in-out;
+        }
+    }
+}
+
+.btn-scroll-top {
+    z-index: 50;
+    position: fixed;
+    bottom: 30px;
+    right: 16px;
+    width: 30px;
+    max-width: 30px;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    padding: 1.25rem;
+    background: white;
+
+    i {
+        animation: scrollup 2s infinite;
+        margin-top: 0.625rem;
+    }
+
+    &:hover {
+        background: rgb(224, 224, 224);
+    }
+
+    &:hover i {
+        margin-top: 0;
+    }
+
+    @keyframes scrollup {
+        40% {
+            transform: translateY(-8px);
+        }
+
+        50% {
+            transform: translateY(-8px);
+        }
+    }
+}
+
+@media (min-width:1200px) {
+    footer {
+        .absolute-footer {
+            .circle-1 {
+                position: absolute;
+                left: 50vw;
+                top: -50px;
+            }
+
+            .circle-2 {
+                position: absolute;
+                left: 51vw;
+                top: -350px;
+            }
+        }
+
+        h1 {
+            font-size: 3.125rem;
+            font-weight: 600;
+        }
+
+        h6 {
+            font-size: 1.125rem;
+            line-height: 1.4;
+            font-weight: 500;
+        }
+
+        .circle-1 {
+            position: absolute;
+            left: 27vw;
+            top: -30px;
+        }
+
+        .circle-2 {
+            position: absolute;
+            left: 28vw;
+            top: -150px;
+        }
+    }
+}
