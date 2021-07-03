@@ -1,0 +1,99 @@
+body {
+    header {
+        position: fixed;
+        color: white;
+        width: 100vw;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 3rem;
+        a {
+            text-decoration: none;
+            color: white;
+            font-weight: 600;
+            margin: 0 1.125rem;
+            &:last-child {
+                margin: 0 0 0 1.125rem;
+            }
+        }
+    }
+    main {
+        width: 100%;
+        height: 100vh;
+        color: white;
+        .section-1 {
+            width: 100%;
+            height: 100%;
+            display: flex;
+            align-items: center;
+            background: url("https://preview.droitthemes.com/wp/flyn/wp-content/uploads/2021/03/first_banner.jpg");
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+            .bg-dot-box {
+                position: absolute;
+                left: 0;
+                top: 50%;
+                transform: translateY(-50%);
+                z-index: 0;
+            }
+            .creative-agency {
+                position: relative;
+                font-family: "Playfair Display", Sans-serif;
+                font-size: 120px;
+                font-weight: bold;
+                line-height: 120px;
+                z-index: 10;
+                .title-1 {
+                    color: white;
+                    line-height: 1;
+                }
+                .title-2 {
+                    color: #ff4a4a;
+                    line-height: 1;
+                }
+            }
+        }
+    }
+    aside {
+        position: fixed;
+    }
+    footer {
+        position: fixed;
+        left: 0;
+        bottom: 0;
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        color: white;
+        padding: 3rem;
+        a {
+            text-decoration: none;
+            color: white;
+            font-weight: 600;
+            margin: 0 .75rem;
+            &:last-child {
+                margin: 0 0 0 .75rem;
+            }
+        }
+    }
+    .ab-shape-1 {
+        position: absolute;
+        left: 80px;
+        top: 180px;
+        width: 80px;
+    }
+    .ab-shape-2 {
+        position: absolute;
+        right: 326px;
+        top: 259px;
+        width: 80px;
+    }
+    .ab-shape-3 {
+        position: absolute;
+        left: 800px;
+        bottom: 72px;
+        width: 80px;
+    }
+}
